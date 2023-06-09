@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../font/fontawesome-free-6.3.0-web/css/all.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="grid">
+                <div class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__list-item"><a href="#">Home</a></li>
+                        <li class="nav__list-item"><a href="#about">Giới Thiệu</a></li>
+                        <li class="nav__list-item"><a href="#menu">Thực Đơn</a></li>
+                        <li class="nav__list-item"><a href="#where">Địa Chỉ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="img">
+                <div class="img-description grid">
+                    <div class="img-description__name">Độc Mộc</div>
+                    <div class="img-description-info">
+                        <div class="img-description-info-time">Mở cửa từ 6:30 đến 23:00</div>
+                        <div class="img-description-info-address">15 Adr street, TP.Vĩnh Yên</div>
+
+                    </div>
+                </div>
+        </div>
+
+        <div class="content">
+            <div class="grid">
+                <!-- about /////////////////////////////////////////////-->
+                <div id="about" class="about">
+
+                    <div class="content-title">
+                       <span>Giới Thiệu Quán Cafe</span>
+                    </div>
+
+                    <div class="about__para">
+                        Quán trà được thành lập tại Vĩnh Yên bởi bà ĐỖ Phùng Sơn, bà yêu thích một công việc tự do, và muốn mang đến cho mọi người không chỉ là trà mà còn là chia sẻ kiến thức liên quan đến nó.
+                    </div>
+                    <div class="about__para">
+                        Thực đơn của chúng tôi không chỉ phục vụ trà mà còn phục vụ cà phê.
+                    </div>
+
+                    <div class="about__slogan">
+                        <div class="about__slogan-para">
+                            "Hãy sử dụng sản phẩm từ thiên nhiên đúng với giá trị của nó - nhưng không bao giơ là quá sớm, cũng không quá muộn."
+                        </div>
+                        <div class="about__slogan-para">
+                            Chủ sở hữu: Đỗ Phùng Sơn
+                        </div>
+                    </div>
+
+                    <img src="./img/z4406957576059_f09e1a19df9fcc65c7729bea6b5f0d12.jpg" alt="" class="about__img">
+
+                    <div class="about__para"> <strong>Giờ mở cửa:</strong> Hằng ngày, từ 6:30 đến 23:00 </div>
+                    <div class="about__para"> <strong>Địa chỉ:</strong> 15 Adr street, TP.Vĩnh Yên </div>
+
+                </div>
+
+
+                <!-- menu /////////////////////////////////////////////-->
+                <div id="menu" class="menu">
+                    <div class="content-title">
+                        <span>Thực Đơn</span>
+                    </div>
+
+                    <!-- menu -->
+                    <div class="menu__container">
+                        <div class="menu-header">
+                            <div class="menu-header__btn tea" id="mylink" onclick="clickMenu('tea')">Trà</div>
+                            <div class="menu-header__btn cafe" onclick="clickMenu('cafe')">Cafe</div>
+                        </div>
+                        
+                        <!-- tea -->
+                        <div id="tea" class="menu-list">
+                            <div class="menu-list__item">
+                                <div class="menu-list__item-name">Trà Hoa Cúc Mật Ong</div>
+                                <div class="menu-list__item-price">30.000đ</div>
+                                <div class="menu-list__item-description">Trà kết hợp với một chút mật ong và hoa cúc khô tạo vị đắng cay nhẹ, thanh mát</div>
+                            </div>
+                            <div class="menu-list__item">
+                                <div class="menu-list__item-name">Trà Cam Quế</div>
+                                <div class="menu-list__item-price">30.000đ</div>
+                                <div class="menu-list__item-description">Mật ong kết hợp với quế và cam</div>
+                            </div> 
+                            <div class="menu-list__item">
+                                <div class="menu-list__item-name">Trà Sen</div>
+                                <div class="menu-list__item-price">30.000đ</div>
+                                <div class="menu-list__item-description">Không lạ gì trà sen nữa, bạn biết nó thích hợp khi nào mà </div>
+                            </div> 
+                            <div class="menu-list__item">
+                                <div class="menu-list__item-name">Trà Hoa Mộc</div>
+                                <div class="menu-list__item-price">30.000đ</div>
+                                <div class="menu-list__item-description">Còn gọi là "mộc quế hoa", bạn đã thử chưa</div>
+                            </div> 
+                            <div class="menu-list__item">
+                                <div class="menu-list__item-name">Chanh Đào Ngâm Đường Phèn</div>
+                                <div class="menu-list__item-price">30.000đ</div>
+                                <div class="menu-list__item-description">Một bài thuốc quý đúng không?</div>
+                            </div>
+                        </div>
+                        <!-- cafe -->
+                        <div id="cafe" class="menu-list">
+                            <div class="menu-list__item">
+                                <div class="menu-list__item-name">Cà Phê Sữa Đá</div>
+                                <div class="menu-list__item-price">30.000đ</div>
+                                <div class="menu-list__item-description">Bắt đầu ngày mới, hãy để tôi giúp bạn tỉnh táo, giải khát cũng không tệ</div>
+                            </div>
+                            <div class="menu-list__item">
+                                <div class="menu-list__item-name">Cà Phê Sữa Nóng</div>
+                                <div class="menu-list__item-price">30.000đ</div>
+                                <div class="menu-list__item-description">Bắt đầu ngày mới, hãy để tôi giúp bạn tỉnh táo, giải khát cũng không tệ</div>
+                            </div> 
+                            <div class="menu-list__item">
+                                <div class="menu-list__item-name">Cà Phê Đen Đá</div>
+                                <div class="menu-list__item-price">30.000đ</div>
+                                <div class="menu-list__item-description">Bắt đầu ngày mới, hãy để tôi giúp bạn tỉnh táo, giải khát cũng không tệ</div>
+                            </div> 
+                            <div class="menu-list__item">
+                                <div class="menu-list__item-name">Cà Phê Đen Nóng</div>
+                                <div class="menu-list__item-price">30.000đ</div>
+                                <div class="menu-list__item-description">Bắt đầu ngày mới, hãy để tôi giúp bạn tỉnh táo, giải khát cũng không tệ</div>
+                            </div> 
+                            <div class="menu-list__item">
+                                <div class="menu-list__item-name">Bạc xỉu Đá</div>
+                                <div class="menu-list__item-price">30.000đ</div>
+                                <div class="menu-list__item-description">Bắt đầu ngày mới, hãy để tôi giúp bạn tỉnh táo, giải khát cũng không tệ</div>
+                            </div>
+                            <div class="menu-list__item">
+                                <div class="menu-list__item-name">Bạc xỉu Nóng</div>
+                                <div class="menu-list__item-price">30.000đ</div>
+                                <div class="menu-list__item-description">Bắt đầu ngày mới, hãy để tôi giúp bạn tỉnh táo, giải khát cũng không tệ</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="./img/Untitled_3.1.1.png" alt="" class="menu__sub-img">
+
+                </div>
+                <!-- end: menu -->
+
+                <!-- WHErEeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee -->
+                <div id="where" class="where">
+                    <div class="content-title">
+                        <span>Nơi có thể tìm thấy chúng tôi</span>
+                    </div>
+
+                    
+                    <p class="where__para">Tìm chúng tôi tại 15 Adr street, TP.Vĩnh Yên</p>
+                    
+                    <img src="./img/Untitled_1.1.1.png" alt="" class="where__img">
+
+                    <p class="where__para"><span>FYI!</span> Chúng tôi cung cấp dịch vụ đồ uống cho mọi người dù ít hay nhiều. Chúng tôi hiểu nhu cầu của bạn và chúng tôi sẽ phục vụ các loại đồ uống để đáp ứng các tiêu chí lớn nhất của tất cả các bạn, cả hình thức và hương vị.</p>
+
+                    <p class="where__mesage"><span>Đặt hàng,</span> yêu cầu đặc biệt của ngày hôm nay hoặc chỉ cần gửi tin nhắn cho chúng tôi:</p>
+
+                    <form action="get" class="where__form">
+                        <input required type="text" name="name" id="" placeholder="Tên" class="where__form-input">
+                        <input required type="text" name="quantity" id="" placeholder="Có bao nhiêu người" class="where__form-input">
+                        <input required type="datetime-local" name="date" value="2023-06-10T20:00" id="" placeholder="Date and time" class="where__form-input">
+                        <input required type="text" name="message" id="" placeholder="Lời nhắn \ Yêu cầu đặc biệt" class="where__form-input">
+
+                        <input type="submit" value="Gửi Đi" class="where__form-btn">
+                    </form>
+                </div>
+                <!-- end:where -->
+            </div>
+            <!-- end:grid -->
+        </div>
+
+        <div class="footer">
+            <div class="footer__contact">
+                <a href="https://www.facebook.com/profile.php?id=100080148169041" class="footer__contact-link"><i class="fa-brands fa-facebook"></i> facebook</a>
+                <a href="#" class="footer__contact-link"><i class="fa-brands fa-instagram"></i> instagram</a>
+                <a href="#" class="footer__contact-link"><i class="fa-brands fa-tiktok"></i> tiktok</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
